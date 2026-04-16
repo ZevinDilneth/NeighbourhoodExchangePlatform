@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- ── Favicon & App Icons ────────────────────────────────────────────── -->
+    <!--
+      Embedded as a data URI so browsers can never serve a cached "no icon" state.
+      The SVG is the hands-helping icon on the brand indigo→emerald gradient square,
+      matching the mobile-logo-icon from logo.html exactly.
+    -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234F46E5'/%3E%3Cstop offset='100%25' stop-color='%2310B981'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='13' fill='url(%23bg)'/%3E%3Cg transform='translate(13,16.8) scale(0.059375)' fill='white'%3E%3Cpath d='M544 248l0 3.3 69.7-69.7c21.9-21.9 21.9-57.3 0-79.2L535.6 24.4c-21.9-21.9-57.3-21.9-79.2 0L416.3 64.5c-2.7-.3-5.5-.5-8.3-.5L296 64c-37.1 0-67.6 28-71.6 64l-.4 0 0 120c0 22.1 17.9 40 40 40s40-17.9 40-40l0-72 0-.1 0-15.9 16 0 136 0 .1 0 7.9 0c44.2 0 80 35.8 80 80l0 8zM336 192l0 56c0 39.8-32.2 72-72 72s-72-32.2-72-72l0-118.6c-35.9 6.2-65.8 32.3-76 68.2L99.5 255.2 26.3 328.4c-21.9 21.9-21.9 57.3 0 79.2l78.1 78.1c21.9 21.9 57.3 21.9 79.2 0l37.7-37.7c.9 0 1.8.1 2.7.1l160 0c26.5 0 48-21.5 48-48 0-5.6-1-11-2.7-16l2.7 0c26.5 0 48-21.5 48-48 0-12.8-5-24.4-13.2-33 25.7-5 45.1-27.6 45.2-54.8l0-.4c-.1-30.8-25.1-55.8-56-55.8l-120 0z'/%3E%3C/g%3E%3C/svg%3E" />
+    <link rel="apple-touch-icon" type="image/svg+xml" href="/icon-512.svg" />
+    <link rel="manifest"                              href="/site.webmanifest" />
+
+    <!-- ── Viewport & Theme ──────────────────────────────────────────────── -->
+    <meta name="viewport"     content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color"  content="#4F46E5" />
+    <meta name="color-scheme" content="light" />
+
+    <!-- ── Primary Meta ──────────────────────────────────────────────────── -->
+    <title>Neighborhood Exchange — Share Skills · Build Community</title>
+    <meta name="description"
+          content="Neighborhood Exchange is a community platform where you can share skills, borrow tools, organise local events, and build genuine connections with your neighbours." />
+    <meta name="keywords"
+          content="skill sharing, community exchange, neighbourhood, local skills, tools, events" />
+    <meta name="author" content="Neighborhood Exchange" />
+
+    <!-- ── Open Graph ────────────────────────────────────────────────────── -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Neighborhood Exchange — Share Skills · Build Community" />
+    <meta property="og:description" content="Share skills, borrow tools, and connect with your neighbours." />
+    <meta property="og:image"       content="/icon-512.svg" />
+    <meta property="og:site_name"   content="Neighborhood Exchange" />
+
+    <!-- ── Twitter Card ──────────────────────────────────────────────────── -->
+    <meta name="twitter:card"        content="summary" />
+    <meta name="twitter:title"       content="Neighborhood Exchange" />
+    <meta name="twitter:description" content="Share skills, borrow tools, connect with neighbours." />
+    <meta name="twitter:image"       content="/icon-512.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

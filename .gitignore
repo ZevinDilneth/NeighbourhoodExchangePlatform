@@ -1,0 +1,75 @@
+# ─── Dependencies ────────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ─── Environment / Secrets (NEVER commit these) ───────────────────────────────
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test.local
+.env.production
+.env.production.local
+*.env.download       # backup env files with real credentials
+*.env.backup
+
+# Jitsi / Docker env (may contain secrets)
+docker/jitsi/.env
+
+# ─── Build outputs ────────────────────────────────────────────────────────────
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+client_output.log
+server_output.log
+logs/
+
+# ─── Runtime / OS ────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ─── Testing & Coverage ───────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+*.lcov
+
+# ─── Editor / IDE ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ─── TypeScript ───────────────────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ─── Misc ────────────────────────────────────────────────────────────────────
+.eslintcache
+.parcel-cache
+.turbo/
+recordings/
+HOW_TO_RUN.txt
+
+# Explicit backup credential files
+client/.env.download
+server/.env.download

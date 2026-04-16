@@ -1,0 +1,125 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Prevent font-size scaling when device rotates on iOS */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #F9FAFB;
+  color: #1F2937;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Prevent horizontal scroll on mobile */
+  overflow-x: hidden;
+  /* Improve tap responsiveness */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Make all images / media scale within their containers */
+img, video, canvas, audio, iframe, embed, object {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Minimum touch-target size for interactive elements */
+button, [role="button"], a, input, select, textarea {
+  touch-action: manipulation;
+}
+
+/* Prevent text overflow on narrow screens */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+/* Font Awesome icons */
+.fas, .far, .fab {
+  font-style: normal;
+}
+
+/* Title case utility — apply to any post/exchange/group title element */
+.post-title {
+  text-transform: capitalize;
+}
+
+/* ── Responsive grid helpers used in PublicHomepage ── */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.stats-grid, .cards-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .hero-grid        { grid-template-columns: 1fr; gap: 2rem; }
+  .stats-grid,
+  .cards-grid-4     { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+}
+@media (max-width: 600px) {
+  .hero-grid        { gap: 1.5rem; }
+  .stats-grid,
+  .cards-grid-4     { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+}
+.cards-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.steps-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 900px) {
+  .cards-grid-3 { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .steps-grid-4 { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+  .footer-grid  { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
+@media (max-width: 600px) {
+  .cards-grid-3 { grid-template-columns: 1fr; gap: 0.875rem; }
+  .steps-grid-4 { grid-template-columns: 1fr; gap: 1rem; }
+  .footer-grid  { grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #4F46E5, #10B981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
