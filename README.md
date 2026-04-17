@@ -8,6 +8,28 @@ Built on a MERN-style stack — **React 18 + TypeScript + Vite** with **Material
 
 ---
 
+## Table of Contents
+
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [System Architecture](#system-architecture)
+- [Core Algorithms](#core-algorithms)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Data Models](#data-models)
+- [Performance](#performance)
+- [AI Content Moderation](#ai-content-moderation-nsfw-detection)
+- [Security](#security)
+- [Getting Started](#getting-started)
+- [Testing](#testing)
+- [Docker](#docker)
+- [Estimated Monthly Costs](#estimated-monthly-costs-mvp)
+- [Roadmap](#roadmap)
+- [Project Documentation](#project-documentation)
+- [Author](#author)
+
+---
+
 ## Features
 
 - **Skill Exchange** — 1-to-1, group (one facilitator, multiple learners), and multi-user chain exchanges
@@ -501,3 +523,4 @@ docker-compose logs -f api # View logs
 | `Ranking Calculation Algorithm.xlsx` | Ranking formula workbook |
 | `CI6600_Final Individual Project_...pdf` | Full project report submitted for CI6600 |
 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
